@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Two</title>
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- slides-->
+
+  <div class="slides">
+    <div id="slide-1">
+      <a href="#slide-2">Go to Slide 2</a>
+
+      <section class="head" class="show-on-scroll">
+        <div class="container">
+          
+          <div id="headertext" class="centered">
+            <h2>POLAR <span class="bearcolor"> BEAR</span></h2>
+          </div>
+          <div>
+            <h1 id="conservationhistorytext" class="midcentered">
+              CONSERVATION & HISTORY
+            </h1>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="slide-2">
+      <a href="#slide-3">Go to Slide 3</a>
+      <section id="headingtextabout">
+        <h2>ABOUT POLAR BEARS</h2>
+      </section>
+
+      <div id="allbuttons">
+        <div class="row2" id="buttons">
+          <div id="buttoncolumn" class="column2" >
+            
+            <button id="reveal" onclick="typeWriter()">Click me</button>
+            
+        </div>
+  
+        <div class="column2" >
+          <p id="demo"></p>
+      </div>
+          
+        </div>
+  
+        <div class="row2" id="buttons">
+          <div id="buttoncolumn" class="column2" >
+            
+            <button id="reveal" onclick="typeWriter2()">Click me</button>
+  
+        </div>
+  
+        <div class="column2" >
+          <p id="demo2"></p>
+  
+      </div>
+          
+        </div>
+  
+        <div class="row2" id="buttons">
+          <div id="buttoncolumn" class="column2" >
+            
+            <button id="reveal" onclick="typeWriter3()">Click me</button>
+  
+        </div>
+  
+        <div class="column2" >
+          <p id="demo3"></p>
+  
+      </div>
+          
+        </div>
+      </div>
+
+      
+        
+      
+      <!--cards-->
+      <div id="textalignleft">
+        <section id="space">
+          <!--p><p id="aboutpolarpara">The largest bear in the world and the Arctic's top predator, polar bears are a powerful symbol of the strength and endurance of the Arctic. The polar bear's Latin name, Ursus maritimus, means "sea bear." It's an apt name for this majestic species, which spends much of its life in, around, or on the ocean–predominantly on the sea ice. In the United States, Alaska is home to two polar bear subpopulations.
+  
+            Considered talented swimmers, polar bears can sustain a pace of six miles per hour by paddling with their front paws and holding their hind legs flat like a rudder. They have a thick layer of body fat and a water-repellent coat that insulates them from the cold air and water.
+            
+            Polar bears spend over 50% of their time hunting for food. A polar bear might catch only one or two out of 10 seals it hunts, depending on the time of year and other variables. Their diet mainly consists of ringed and bearded seals because they need large amounts of fat to survive.
+            
+            </p></p> -->
+        </section>
+      </div>
+      
+      <section id="cards" class="show-on-scroll">
+        <div class="row">
+          <div class="column">
+            <!--diet card-->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="./images/diet_card.JPG"
+                    alt="Avatar"
+                    style="width: 300px; height: 300px"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h1 id="h1-card">Fish & Seals</h1>
+                  <p>
+                    The preferred prey for polar bears are seals—the species
+                    they prey upon most often are ringed seals and bearded
+                    seals, two species that are members of the group of seals
+                    known as "ice seals."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <!--habitat card-->
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="./images/habitat_card.JPG"
+                    alt="Avatar"
+                    style="width: 300px; height: 300px"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h1 id="h1-card">Sea Ice</h1>
+                  <p>
+                    Home for polar bears is on the sea ice, where they hunt
+                    seals at open leads. Polar bears are found in five nations
+                    across the Arctic: the U.S. (Alaska), Canada, Russia,
+                    Greenland, and Norway (Svalbard).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <!--lifespan card-->
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="./images/lifespan_card.JPG"
+                    alt="Avatar"
+                    style="width: 300px; height: 300px"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h1 id="h1-card">20 to 30 Years</h1>
+                  <p>
+                    Polar bears in the wild can live to be 30 years of age, but
+                    this is rare. Most adults die before they reach 25 years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div id="slide-3">
+      <a href="#slide-4">Go to Slide 4</a>
+
+      <!--my graphs-->
+      <section id="headingtext">
+        <h2>SEA ICE MELTING</h2>
+      </section>
+      
+      <div class="row2">
+        <section id="graphs" class="column2">
+          <div id="graph">
+            <section><h1>Sea Extent 2009-2017</h1></section>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/4361637"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </section>
+        <section id="graphs" class="show-on-scroll column2">
+          <div id="graph">
+            <h1>Overview of Conditions</h1>
+            <p >
+              Average sea ice extent for August 2016 was 5.60 million square
+              kilometers (2.16 million square miles), the fourth lowest August
+              extent in the satellite record. This is 1.03 million square
+              kilometers below the 1981 to 2010 average for the month and
+              890,000 square kilometers (344,000 square miles) above the record
+              low for August set in 2012. As of September 5, sea ice extent
+              remains below average everywhere except for a small area within
+              the Laptev Sea. 
+            </p>
+<img src="./images/seaicevideo.gif" alt="gif" width=50%>            
+          </div>
+          
+          
+        </section>
+          
+  
+</div>
+   
+
+    </div>
+
+    <div id="slide-4">
+      <a href="#slide-1">Start Over</a>
+   <section id="headingtextpop">
+     <h2>POPULATION</h2>
+   </section>
+
+ 
+     
+<section id="space"></section>
+
+      
+      <div id="accordianpop">
+        
+        <button class="accordion">Population Facts</button>
+        <div class="panel">
+          <p>Some of these populations are growing; others are relatively stable. The status of certain populations is unknown. But studies by the United States Geological Survey show that some populations may, in fact, be shrinking.</p>
+               </div>
+        
+        <button class="accordion">Are They Threatened?</button>
+        <div class="panel">
+          <p>
+            Many scientists believe that due to climate change and resulting environmental factors, the trend is reversing. The Department of the Interior’s classification has more to do with increasing concerns for the future than with current population numbers. The Endangered Species Act of 1973 defines a "threatened" species as one "which is likely to become an endangered species within the foreseeable future throughout all or a significant portion of its range."
+                  </p>
+                  
+        </div>
+        <button class="accordion">Polar Bear Population Map</button>
+      <div class="panel">
+        <img src="./images/polarbear populations.jpg" alt="" width=60%;>
+      </div>
+      </div>
+      
+     
+ </div>
+   
+
+    <div id="slide-5">
+      <a href="#slide-1">Start Over</a>
+      <section id="headingtextabout">
+        <h2>HISTORY OF POLAR BEAR CONSERVATION</h2>
+      </section>
+      <!--cards-->
+      <DIV id="space-conservation"><section id="space" >
+        <p id=conservationpara>The survival and the protection of the polar bear habitat are urgent issues for WWF. In October 2019, the International Union for the Conservation of Nature (IUCN) Polar Bear Specialist Group released a new assessment of polar bear populations showing that the number of polar bear subpopulations experience recent declines has increased to four, with eight populations still being data-deficient. The good news is that five populations are stable while two have been experiencing an upward trend.<p>
+      </section></DIV>
+      <div id="accordianpop">
+        
+        <button id=timelinebutton class="accordion">View Conservation Timeline</button>
+        <div id=timelinepanel class="panel">
+          <section id="timeline">
+            <div class="timeline">
+              <div class="containertime left">
+                <div class="content">
+                  <h1>Before 1973</h1>
+                  <p>
+                    Polar bears are an integral part of the Arctic ecosystem and the
+                    food web for Indigenous Peoples -- who have hunted polar bears
+                    sustainably for millennia. But, beginning in the 1700s,
+                    large-scale hunting by European, Russian and North American
+                    hunters and trappers took place, raising concerns about the
+                    future survival of polar bears. Unregulated commercial and
+                    recreational hunting continued until the 1970s.
+                  </p>
+                </div>
+              </div>
+    
+              <div id="contentcard" class="containertime right">
+                <div class="content">
+                  <h1>1973</h1>
+                  <p>
+                    Canada, the United States, Denmark, Norway and the former USSR
+                    signed the International Agreement on the Conservation of Polar
+                    Bears and their Habitat, strictly regulating commercial hunting.
+                    The US Government classified the Polar Bear under its Endangered
+                    Species Act (ESA).
+                  </p>
+                </div>
+              </div>
+    
+              <div class="containertime left">
+                <div class="content">
+                  <h1>2005</h1>
+                  <p>
+                    The polar bear was upgraded from Least Concern to Vulnerable by
+                    the the IUCN Polar Bear Specialist Group.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="containertime right">
+                <div class="content">
+                  <h1>2013</h1>
+                  <p>
+                    Ministers and other leaders from the five polar bear range
+                    states met in Moscow for the first International Forum on Polar
+                    Bear Conservation. The leaders made significant commitments to
+                    address issues of polar bear habitat, research and trade. This
+                    event was supported by WWF.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="containertime left">
+                <div class="content">
+                  <h1>Today</h1>
+                  <p>
+                    Today, polar bears are among the few large carnivores that are
+                    still found in roughly their original habitat and range--and in
+                    some places, in roughly their natural numbers. Although most of
+                    the world's 19 populations have returned to healthy numbers,
+                    there are differences between them. Some are stable, some seem
+                    to be increasing, and some are decreasing due to various
+                    pressures. Status of the polar bear populations Updated 2019
+                    with data from the IUCN Polar Bear Specialists Group
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+               </div>
+              </div>
+      
+     
+       
+      </div>
+  
+      
+      <div id="slide-6">
+        <a href="#slide-1">Start Over</a>
+        <div id="form">
+          <a name="form1217530995" id="formAnchor1217530995"></a>
+<script src="https://fs4.formsite.com/include/form/embedManager.js?1217530995"></script>
+<script>
+EmbedManager.embed({
+	key: "https://fs4.formsite.com/res/showFormEmbed?EParam=PyBo85CFjhHWUkVoo9mjf9t7h1SghSJ6&1217530995",
+	width: "50%"
+});
+</script>
+
+           
+        </div>
+    
+      </div>
+  </div>
+
+  <!--dots-->
+  <div class="dots">
+    <div class="dots-container" >
+      <a href="#slide-1">
+        <div class="dot" id="dot-1"></div>
+      </a>
+      <a href="#slide-2">
+        <div class="dot" id="dot-2"></div>
+      </a>
+      <a href="#slide-3">
+        <div class="dot" id="dot-3"></div>
+      </a>
+      <a href="#slide-4">
+        <div class="dot" id="dot-4"></div>
+      </a>
+        <a href="#slide-5">
+          <div class="dot" id="dot-5"></div>
+          </a>
+          <a href="#slide-6">
+            <div class="dot" id="dot-6"></div>
+            </a>
+  </div>
+</div>
+  
+
+      <!--TIMELINE CONTENT--------------->
+      <!---
+      <section id="timeline">
+        <div class="timeline">
+          <div class="containertime left">
+            <div class="content">
+              <h1>Before 1973</h1>
+              <p>
+                Polar bears are an integral part of the Arctic ecosystem and the
+                food web for Indigenous Peoples -- who have hunted polar bears
+                sustainably for millennia. But, beginning in the 1700s,
+                large-scale hunting by European, Russian and North American
+                hunters and trappers took place, raising concerns about the
+                future survival of polar bears. Unregulated commercial and
+                recreational hunting continued until the 1970s.
+              </p>
+            </div>
+          </div>
+
+          <div id="contentcard" class="containertime right">
+            <div class="content">
+              <h1>1973</h1>
+              <p>
+                Canada, the United States, Denmark, Norway and the former USSR
+                signed the International Agreement on the Conservation of Polar
+                Bears and their Habitat, strictly regulating commercial hunting.
+                The US Government classified the Polar Bear under its Endangered
+                Species Act (ESA).
+              </p>
+            </div>
+          </div>
+
+          <div class="containertime left">
+            <div class="content">
+              <h1>2005</h1>
+              <p>
+                The polar bear was upgraded from Least Concern to Vulnerable by
+                the the IUCN Polar Bear Specialist Group.
+              </p>
+            </div>
+          </div>
+
+          <div class="containertime right">
+            <div class="content">
+              <h1>2013</h1>
+              <p>
+                Ministers and other leaders from the five polar bear range
+                states met in Moscow for the first International Forum on Polar
+                Bear Conservation. The leaders made significant commitments to
+                address issues of polar bear habitat, research and trade. This
+                event was supported by WWF.
+              </p>
+            </div>
+          </div>
+
+          <div class="containertime left">
+            <div class="content">
+              <h1>Today</h1>
+              <p>
+                Today, polar bears are among the few large carnivores that are
+                still found in roughly their original habitat and range--and in
+                some places, in roughly their natural numbers. Although most of
+                the world's 19 populations have returned to healthy numbers,
+                there are differences between them. Some are stable, some seem
+                to be increasing, and some are decreasing due to various
+                pressures. Status of the polar bear populations Updated 2019
+                with data from the IUCN Polar Bear Specialists Group
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </a>
+  </div>
+</html>
