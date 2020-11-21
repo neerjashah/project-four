@@ -5,6 +5,44 @@
   box-sizing: border-box;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.26); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.212); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -57,6 +95,9 @@ button:hover {
   color: white;
 }
 
+#myBtn {
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -67,7 +108,7 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: #000205a8;
   padding-top: 50px;
 }
 
@@ -579,7 +620,7 @@ div.column {
 }
 
 #sources {
-  background-color: rgba(3, 19, 112, 0.89);
+  background-color: rgba(3, 19, 112, 0);
   margin: auto;
   padding: 20px;
   margin-left: 10%;
@@ -714,6 +755,7 @@ div.column {
 #headertext {
   margin-top: 5%;
   opacity: 1;
+
   transition: 3s;
 
   transition-delay: 0.3s;
@@ -905,7 +947,7 @@ div.column {
 
 @media screen and (max-width: 800px) {
   button {
-    background-color: #0b2d58;
+    background-color: #29167c;
     color: white;
     padding: 14px 20px;
     font-family: poppins;
@@ -921,7 +963,7 @@ div.column {
 
 @media screen and (min-width: 800px) {
   button {
-    background-color: #0b2d58;
+    background-color: #29167c;
     color: white;
     padding: 14px 20px;
     font-family: poppins;
@@ -931,12 +973,12 @@ div.column {
     border: none;
     cursor: pointer;
     width: 50%;
-    opacity: 0.9;
+    opacity: 1;
   }
 }
 
 #formbtn {
-  background-color: rgb(22, 22, 117);
+  background-color: #29167c;
   border-radius: 5 px;
 }
 
@@ -951,6 +993,21 @@ div.column {
   #button-align-right {
     text-align: center;
     margin-top: 50%;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #button-align-right2 {
+    text-align: right;
+    margin-top: 1%;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #button-align-right2 {
+    text-align: center;
+    margin-top: 1%;
     padding-right: 0px;
   }
 }
