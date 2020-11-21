@@ -5,6 +5,186 @@
   box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#adoptpolarbear {
+  font-size: 30px;
+  text-align: center;
+}
+/* Set a style for all buttons */
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container-form {
+  padding: 16px;
+  text-align: center;
+
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #3b51b4;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+/*text reveal styles */
+@media screen and (min-width: 800px) {
+  #demo {
+    color: white;
+    padding: none;
+    margin-left: 20px;
+
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #demo2 {
+    color: white;
+    padding: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #demo3 {
+    color: white;
+    padding: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  #buttoncolumn {
+    text-align: right;
+    padding-right: 0px;
+  }
+  #reveal {
+    color: rgb(65, 211, 255);
+    box-shadow: 0 5px 5px -2px rgba(5, 58, 88, 0.377);
+    font-weight: bolder;
+    border-radius: 9px;
+    background-color: rgb(7, 14, 54);
+    width: 20vw;
+  }
+
+  #reveal:hover {
+    color: darkblue;
+    font-size: bolder;
+    background-color: rgb(123, 154, 255);
+    box-shadow: 0 0 7px 0 rgba(136, 164, 255, 0.699);
+  }
+
+  #buttons {
+    background-color: rgba(12, 69, 192, 0);
+    padding: 5px;
+    margin: auto;
+    margin-top: 0.2%;
+    text-align: left;
+    width: 95%;
+  }
+
+  #allbuttons {
+    margin-top: 3%;
+    background-color: rgba(10, 32, 71, 0.651);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #buttons .column2 {
+    margin: auto;
+    width: 45%;
+  }
+}
+
 #demo {
   color: white;
   padding: none;
@@ -36,9 +216,8 @@
   color: rgb(65, 211, 255);
   box-shadow: 0 5px 5px -2px rgba(5, 58, 88, 0.377);
   font-weight: bolder;
-  border-radius: 50px;
+  border-radius: 9px;
   background-color: rgb(7, 14, 54);
-  width: 20vw;
 }
 
 #reveal:hover {
@@ -50,23 +229,17 @@
 
 #buttons {
   background-color: rgba(12, 69, 192, 0);
-  padding: 5px;
-  margin: auto;
-  margin-top: 0.2%;
-  text-align: left;
-  width: 95%;
 }
 
 #allbuttons {
   margin-top: 3%;
+  padding-bottom: 10px;
+  padding-top: 10px;
   background-color: rgba(10, 32, 71, 0.651);
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
 #buttons .column2 {
   margin: auto;
-  width: 45%;
 }
 
 /* Set a background color */
@@ -80,6 +253,10 @@ body {
   max-width: 100%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0);
+}
+
+#footerspace {
+  padding: 90px;
 }
 
 #space {
@@ -138,6 +315,16 @@ body {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 800px) {
+  #conservationpara {
+    color: navy;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
 #space-conservation {
   background-color: rgb(255, 255, 255);
   margin-top: none;
@@ -153,6 +340,14 @@ body {
   background: rgb(52, 67, 83);
   background-image: url(./../images/polarbear.jpg);
   background-size: cover;
+}
+
+ul li {
+  color: white;
+}
+
+h1 {
+  color: white;
 }
 
 #slide-2 {
@@ -181,16 +376,25 @@ body {
   background-size: cover;
 }
 
-#slide-6 {
-  background: rgba(205, 228, 255, 0);
-  background-image: url(./../images/polarbear-with-kids.jpg);
-  background-size: cover;
+@media screen and (max-width: 800px) {
+  #slide-6 {
+    background: rgba(205, 228, 255, 0);
+    background-image: url(./../images/seaice.jpg);
+    background-size: 2000px;
+  }
 }
 
-#form {
-  text-align: right;
-  margin: 40px;
-  margin-bottom: 50px;
+@media screen and (min-width: 800px) {
+  #slide-6 {
+    background: rgba(205, 228, 255, 0);
+    background-image: url(./../images/polarbear-with-kids.jpg);
+    background-size: cover;
+  }
+}
+
+#slide-7 {
+  background-color: navy;
+  background-image: url(./../images/standingpolarbear.jpg);
 }
 
 .dots {
@@ -291,10 +495,10 @@ body {
 
 @media screen and (max-width: 800px) {
   #conservationhistorytext {
-    font-size: 15px;
+    font-size: 25px;
     letter-spacing: 5px;
     margin-bottom: 0px;
-    margin-top: 15%;
+    margin-top: 5%;
   }
 }
 
@@ -305,7 +509,7 @@ body {
     font-size: 30px;
     letter-spacing: 15px;
     margin-bottom: 5px;
-    margin-top: 15%;
+    margin-top: 8%;
     color: rgb(184, 184, 184);
   }
 }
@@ -333,6 +537,7 @@ h1 {
   font-weight: bold;
   margin-top: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 #aboutpolarpara {
@@ -348,10 +553,17 @@ div img {
   box-shadow: 0 2px 10px 2px rgba(0, 10, 153, 0.548);
 }
 
+@media screen and (min-width: 800px) {
+  div.column {
+    margin: auto;
+    padding: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+
 div.column {
-  margin: auto;
-  padding: 0px;
-  margin-right: 0px;
+  margin-top: 20px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -364,6 +576,20 @@ div.column {
   padding: 0px;
   background-color: none;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+#sources {
+  background-color: rgba(3, 19, 112, 0.89);
+  margin: auto;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 30%;
+  margin-top: 200px;
+  font-size: 25px;
+}
+
+#sources h1 {
+  font-size: 27px;
 }
 
 @media screen and (max-width: 800px) {
@@ -391,7 +617,7 @@ div.column {
 .flip-card-back {
   position: absolute;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15 px;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
@@ -401,13 +627,13 @@ div.column {
 .flip-card-front {
   background-color: #bbb;
   color: black;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /* Style the back side */
 .flip-card-back {
   background-color: rgb(9, 28, 46);
-  border-radius: 20px;
+  border-radius: 15px;
   color: white;
   transform: rotateY(180deg);
 }
@@ -442,19 +668,37 @@ div.column {
   color: white;
   padding: 0px;
 }
+@media screen and (max-width: 800px) {
+  /* Centered text */
+  .centered {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: rgb(21, 8, 63);
+  }
 
+  .container {
+    padding-top: 100px;
+    margin-top: 50%;
+  }
+  .midcentered {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    font-size: 100px;
+    background-color: rgb(21, 8, 63);
+  }
+}
 /* Centered text */
 .centered {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 40%;
   background-color: rgb(21, 8, 63);
 }
 
 .midcentered {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 60%;
   background-color: rgb(21, 8, 63);
 }
 
@@ -658,22 +902,62 @@ div.column {
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: #3086f7;
-  color: white;
-  padding: 14px 20px;
-  font-family: poppins;
-  font-size: 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+
+@media screen and (max-width: 800px) {
+  button {
+    background-color: #0b2d58;
+    color: white;
+    padding: 14px 20px;
+    font-family: poppins;
+    font-size: 20px;
+    margin: 8px 0;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  button {
+    background-color: #0b2d58;
+    color: white;
+    padding: 14px 20px;
+    font-family: poppins;
+    font-size: 20px;
+    margin: 8px 0;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  }
+}
+
+#formbtn {
+  background-color: rgb(22, 22, 117);
+  border-radius: 5 px;
+}
+
+@media screen and (min-width: 800px) {
+  #button-align-right {
+    text-align: right;
+    margin-top: 20%;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #button-align-right {
+    text-align: center;
+    margin-top: 50%;
+    padding-right: 0px;
+  }
 }
 
 button:hover {
   opacity: 1;
-  box-shadow: 0 0 9px 0px blue;
+  box-shadow: 0 0 3px 0px blue;
 }
 
 /* Clear floats */
@@ -683,9 +967,16 @@ button:hover {
   display: table;
 }
 
+@media screen and (min-width: 800px) {
+  #accordianpop {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 #accordianpop {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */

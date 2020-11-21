@@ -16,14 +16,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <!-- slides-->
 
   <div class="slides">
     <div id="slide-1">
-      <a href="#slide-2">Go to Slide 2</a>
 
-      <section class="head" class="show-on-scroll">
+      <section class="head">
         <div class="container">
           
           <div id="headertext" class="centered">
@@ -38,9 +42,8 @@
       </section>
     </div>
     <div id="slide-2">
-      <a href="#slide-3">Go to Slide 3</a>
       <section id="headingtextabout">
-        <h2>ABOUT POLAR BEARS</h2>
+        <h2 class=>ABOUT POLAR BEARS</h2>
       </section>
 
       <div id="allbuttons">
@@ -173,12 +176,15 @@
               </div>
             </div>
           </div>
+
+
         </div>
+      <section id="footerspace"></section>
+
       </section>
     </div>
     
     <div id="slide-3">
-      <a href="#slide-4">Go to Slide 4</a>
 
       <!--my graphs-->
       <section id="headingtext">
@@ -207,6 +213,7 @@
             </p>
 <img src="./images/seaicevideo.gif" alt="gif" width=50%>            
           </div>
+
           
           
         </section>
@@ -214,11 +221,10 @@
   
 </div>
    
-
+<section id="footerspace"></section>
     </div>
 
     <div id="slide-4">
-      <a href="#slide-1">Start Over</a>
    <section id="headingtextpop">
      <h2>POPULATION</h2>
    </section>
@@ -244,21 +250,23 @@
         </div>
         <button class="accordion">Polar Bear Population Map</button>
       <div class="panel">
-        <img src="./images/polarbear populations.jpg" alt="" width=60%;>
+        <img src="./images/polarbear populations.jpg" alt="" width=90%;>
       </div>
       </div>
+      <section id="footerspace"></section>
+
       
      
  </div>
    
 
     <div id="slide-5">
-      <a href="#slide-1">Start Over</a>
+
       <section id="headingtextabout">
         <h2>HISTORY OF POLAR BEAR CONSERVATION</h2>
       </section>
       <!--cards-->
-      <DIV id="space-conservation"><section id="space" >
+      <DIV id="space-conservation"><section  >
         <p id=conservationpara>The survival and the protection of the polar bear habitat are urgent issues for WWF. In October 2019, the International Union for the Conservation of Nature (IUCN) Polar Bear Specialist Group released a new assessment of polar bear populations showing that the number of polar bear subpopulations experience recent declines has increased to four, with eight populations still being data-deficient. The good news is that five populations are stable while two have been experiencing an upward trend.<p>
       </section></DIV>
       <div id="accordianpop">
@@ -335,31 +343,69 @@
               </div>
             </div>
           </section>
-          <section>
                </div>
               </div>
       
-     
+              <section id="footerspace"></section>
+
        
       </div>
   
       
       <div id="slide-6">
-        <a href="#slide-1">Start Over</a>
-        <div id="form">
-          <a name="form1217530995" id="formAnchor1217530995"></a>
-<script src="https://fs4.formsite.com/include/form/embedManager.js?1217530995"></script>
-<script>
-EmbedManager.embed({
-	key: "https://fs4.formsite.com/res/showFormEmbed?EParam=PyBo85CFjhHWUkVoo9mjf9t7h1SghSJ6&1217530995",
-	width: "50%"
-});
-</script>
+        <!-- Button to open the modal -->
+        <div id="button-align-right">
+          <button id="formbtn" onclick="document.getElementById('id01').style.display='block'">Adopt a Polar Bear</button>
 
-           
         </div>
-    
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container-form">
+      <h1 id="adoptpolarbear">Adopt a Polar Bear</h1>
+      <p>Please fill out your donation amount and information.</p>
+      <hr>
+      <label for="email"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First and Last Name" name="email" required>
+
+      <label for="psw"><b>Email</b></label>
+      <input type="text" placeholder="example@email.com" name="psw" required>
+
+      <label for="psw-repeat"><b>Donation Amount</b></label>
+      <input type="number" placeholder="$0.00" name="psw-repeat" required>
+
+     
+      <p>By donating you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button id="formbtn"  type="submit" class="signup">Continue to Payment</button>
       </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+</div>
+
+<div id="slide-7">
+  <div id="sources" >
+    <section>
+      <h1>My Sources</h1>
+      <ul>
+        <li>WWF</li>
+        <li>Seaworld Parks</li>
+        <li>Gettys Images</li>
+      </ul>
+    </section>
+    
+  </div>
+</div>
+
+    
   </div>
 
   <!--dots-->
@@ -383,6 +429,9 @@ EmbedManager.embed({
           <a href="#slide-6">
             <div class="dot" id="dot-6"></div>
             </a>
+            <a href="#slide-7">
+              <div class="dot" id="dot-7"></div>
+              </a>
   </div>
 </div>
   
