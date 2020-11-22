@@ -1,7 +1,7 @@
 
 //text reveal
 var i = 0;
-var txt = 'Polar Bears are the largest bear in the world.'
+var txt = 'The Polar Bears are the largest bear in the world.'
 var speed = 30;
 
 function typeWriter() {
